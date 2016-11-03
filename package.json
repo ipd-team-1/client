@@ -1,0 +1,24 @@
+{
+  "name": "hdavidzhu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node_modules/.bin/webpack src/components/root/index.js dist/bundle.js",
+    "host": "node_modules/.bin/http-server dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipd-team-1/client.git"
+  },
+  "author": "David Zhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipd-team-1/client/issues"
+  },
+  "homepage": "https://github.com/ipd-team-1/client#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.3"
+  }
+}
