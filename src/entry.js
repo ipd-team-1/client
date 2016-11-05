@@ -1,9 +1,10 @@
-document.write("It works");
-document.write(require("./components/art_display/index"));
+const Vue = require('vue');
+require('./components/art_display/index');
 
+/* eslint-disable no-new */
 new Vue({
-  el: "#root",
+  el: '#root',
   data: {},
   ready: {},
-  methods: {}
+  methods: {},
 });

@@ -1,3 +1,4 @@
-require("./index.scss");
+require('./index.scss');
+const ImageProvider = require('../../models/image_provider');
 
-module.exports = "This is from the art display.";
+ImageProvider.grabRandomImage();
