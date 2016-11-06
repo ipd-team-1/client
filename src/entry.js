@@ -1,7 +1,4 @@
-/* eslint-disable spaced-comment */
-//# sourceMappingURL=sourcefile.js.map
-
-const Vue = require('vue');
+const Vue = require('vue/dist/vue.js');
 require('./components/art_display/index');
 
 /* eslint-disable no-new */
