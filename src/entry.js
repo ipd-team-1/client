@@ -6,6 +6,7 @@ function componentize(component) {
 
 componentize(require('./components/root'));
 componentize(require('./components/art_display'));
+componentize(require('./components/on_screen_control'));
 
 /* eslint-disable no-new */
 new Vue({
