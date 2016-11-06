@@ -1,12 +1,9 @@
 require('./index.scss');
 const template = require('./index.html');
-const ImageProvider = require('../../models/image_provider');
 
 module.exports = {
-  name: 'cmp-art-display',
+  name: 'cmp-root',
   properties: {
     template,
   },
 };
-
-ImageProvider.grabRandomImage();

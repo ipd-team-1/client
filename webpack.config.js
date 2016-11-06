@@ -7,6 +7,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.html$/,
+        loader: 'html',
+      },
+      {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass'],
       },
