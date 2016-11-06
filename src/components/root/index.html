@@ -1,4 +1,8 @@
 <div class="cmp-root">
-  <cmp-art-display></cmp-art-display>
-  <cmp-on-screen-control></cmp-on-screen-control>
+  <cmp-art-display
+    :is-favorited="true">
+  </cmp-art-display>
+  <cmp-on-screen-control
+    v-on:favorite="onFavorite()">
+  </cmp-on-screen-control>
 </div>

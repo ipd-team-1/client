@@ -7,6 +7,9 @@ module.exports = {
   properties: {
     template,
     methods: {
+      onHeartBtnClicked() {
+        this.$emit('favorite');
+      },
       onNextBtnClicked() {
         ImageProvider.grabRandomImage();
       },
