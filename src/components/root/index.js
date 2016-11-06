@@ -9,7 +9,13 @@ module.exports = {
       onFavorite() {
         // TODO: Complete.
         console.log("onFavorite has been clicked");
+        this.isFavorited = true;
       },
+    },
+    data() {
+      return {
+        isFavorited: false,
+      };
     },
   },
 };
