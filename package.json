@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "node_modules/.bin/webpack",
+    "bundle": "node_modules/.bin/webpack --watch -d",
     "host": "node_modules/.bin/http-server dist/"
   },
   "repository": {
