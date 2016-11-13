@@ -6,14 +6,11 @@ module.exports = {
   grabRandomImage: () => {
     axios({
       method: 'get',
-      url: 'https://source.unsplash.com/category/nature',
-      responseType: 'blob',
+      url: '/api/images/random',
+      responseType: 'json',
     })
       .then((res) => {
-        const blob = new Blob([res.data], { type: 'image/jpeg' });
-        const urlCreator = window.URL || window.webkitURL;
-        const imageUrl = urlCreator.createObjectURL(blob);
-        document.body.style.backgroundImage = `url(${imageUrl})`;
+        document.body.style.backgroundImage = `url(${res.data.url})`;
       });
   },
 };
