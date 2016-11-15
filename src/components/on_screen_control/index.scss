@@ -1,6 +1,13 @@
+@import '../../scss/helpers/shadows';
+
+$white: #fff;
+
 .btn-control {
+  @extend %sh1;
   align-items: center;
-  background-color: #ffffff;
+  background-color: $white;
+  border-radius: 40px;
+  color: $white;
   display: flex;
   font-size: 2em;
   height: 40px;
@@ -9,4 +16,22 @@
   padding: 10px;
   text-align: center;
   width: 40px;
+
+  &:hover {
+    @extend %sh3;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+  }
+}
+
+.btn-heart {
+  background-color: #FE4A49;
+}
+
+.btn-pay {
+  background-color: #4DA167;
+}
+
+.btn-next {
+  background-color: #3DA5D9;
 }
