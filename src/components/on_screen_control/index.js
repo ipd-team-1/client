@@ -11,7 +11,7 @@ module.exports = {
         this.$emit('favorite');
       },
       onNextBtnClicked() {
-        ImageProvider.grabRandomImage();
+        ImageProvider.grabRandomImage(window.currentImageId);
       },
     },
   },
